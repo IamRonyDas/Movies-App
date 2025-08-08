@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Reviews Page Navbar -->
+    <div class="reviews-navbar">
+      <h1>🎬 Movie Reviews</h1>
+      <a href="index.html">🏠 Home</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="review-container">
+      <div class="movie-header">
+        <img id="moviePoster" class="review-poster" />
+        <h2 id="movieTitle"></h2>
+      </div>
+
+      <h3>Reviews</h3>
+      <div id="reviewsList" class="reviews-list"></div>
+
+      <h3>Write Your Review</h3>
+      <input type="text" id="username" placeholder="Your Name" />
+      <textarea id="reviewText" placeholder="Write your review here"></textarea>
+      <div>
+        <button id="submitReview">✅ Submit Review</button>
+        <button onclick="window.history.back()" class="back-btn">⬅ Back</button>
+      </div>
+    </div>
+
+    <script src="reviews.js"></script>
+  </body>
+</html>
